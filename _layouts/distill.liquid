@@ -89,12 +89,7 @@
           </d-contents>
 
         {% elsif page.toc == true %}
-          <d-contents>
-            <nav class="l-text figcaption">
-              <h3>Contents</h3>
-              {% toc %}
-            </nav>
-          </d-contents>
+          {% comment %}TOC functionality disabled for GitHub Pages compatibility{% endcomment %}
         {% endif %}
 
         {{ content }}
